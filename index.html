@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal Timing | Homieux Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Epilogue', sans-serif;
+            background: #FFFFFF;
+            color: #000887;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #000887;
+        }
+        
+        .calendly-link {
+            color: #ED51C2;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .calendly-link:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            line-height: 1.2;
+        }
+        
+        .insight-box {
+            background: #F8F8F8;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .insight-label {
+            color: #ED51C2;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        
+        .insight-text {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        
+        .timeline-simple {
+            margin: 40px 0;
+            padding: 30px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            border: 1px solid #E5E5E5;
+        }
+        
+        .timeline-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-months {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+        
+        .month {
+            flex: 1;
+            text-align: center;
+            padding: 15px 5px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .month.early {
+            background: #E8E8E8;
+            color: #666;
+        }
+        
+        .month.active {
+            background: #000887;
+            color: #FFFFFF;
+        }
+        
+        .month.later {
+            background: #E8E8E8;
+            color: #666;
+        }
+        
+        .timeline-label {
+            width: 100px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .explanation {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 40px 0;
+            line-height: 1.7;
+        }
+        
+        .examples-section {
+            margin-top: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .example-cards {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .example-card {
+            background: #F8F8F8;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        
+        .example-location {
+            color: #ED51C2;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        
+        .example-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            margin-top: 60px;
+            text-align: center;
+            padding: 40px;
+            background: #F8F8F8;
+            border-radius: 12px;
+        }
+        
+        .cta-text {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ED51C2;
+            color: #FFFFFF;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .cta-button:hover {
+            background: #D945A8;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #E5E5E5;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .email-link {
+            color: #000887;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.75rem; }
+            .timeline-months { flex-wrap: wrap; }
+            .month { min-width: 60px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Homieux Media</div>
+            <a href="https://calendly.com/homieuxmedia/discovery-call-gratuit-discutons-de-vos-defis" class="calendly-link">Schedule a conversation</a>
+        </header>
+        
+        <h1>Deal Timing in Equipment Sales</h1>
+        
+        <div class="insight-box">
+            <div class="insight-label">A Common Observation</div>
+            <div class="insight-text">
+                Many equipment deals follow a natural rhythm: initial enthusiasm, technical evaluation, 
+                then a quieter period around months 4-6 when client-side priorities shift. 
+                This isn't failure—it's normal project dynamics.
+            </div>
+        </div>
+        
+        <div class="timeline-simple">
+            <div class="timeline-row">
+                <div class="timeline-label">Typical flow:</div>
+                <div class="timeline-months">
+                    <div class="month early">M1-2</div>
+                    <div class="month early">M3</div>
+                    <div class="month active">M4-6</div>
+                    <div class="month later">M7+</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">
+                Months 4-6 often see slower communication as clients navigate internal decisions
+            </p>
+        </div>
+        
+        <p class="explanation">
+            The question isn't whether deals slow down—most do. The question is how to maintain 
+            appropriate connection during these periods without pressure. Some companies have 
+            developed gentle, respectful approaches.
+        </p>
+        
+        <div class="examples-section">
+            <h2 class="section-title">Thoughtful Follow-Up Approaches</h2>
+            
+            <div class="example-cards">
+                <div class="example-card">
+                    <div class="example-location">Antwerp-based distributor</div>
+                    <div class="example-text">
+                        Instead of repeated "checking in" emails, they share relevant industry 
+                        updates—regulatory changes, new efficiency standards—that genuinely help 
+                        the client's planning. Positioned as advisor, not vendor.
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-location">Brussels-based integrator</div>
+                    <div class="example-text">
+                        Mapped typical client decision timelines and aligned touchpoints accordingly. 
+                        Month 4: budget confirmation. Month 5: technical validation. Month 6: 
+                        implementation planning. Each contact had specific purpose.
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-location">Ghent-based distributor</div>
+                    <div class="example-text">
+                        When deals stalled, they offered value-add conversations: "Even if timing 
+                        has shifted, would a brief technical review be useful for your planning?" 
+                        Many clients appreciated the no-pressure approach and re-engaged.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <p class="cta-text">Have a deal where timing has become unclear?</p>
+            <a href="https://calendly.com/homieuxmedia/discovery-call-gratuit-discutons-de-vos-defis" class="cta-button">Let's discuss your situation</a>
+        </div>
+        
+        <footer>
+            <p>Questions? Reach us at <a href="mailto:info@homieuxmedia.com" class="email-link">info@homieuxmedia.com</a></p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">&copy; 2026 Homieux Media</p>
+        </footer>
+    </div>
+</body>
+</html>
